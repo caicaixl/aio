@@ -30,6 +30,7 @@ async def init():
     app.router.add_static('/html/',path='templates/html',name='html')
     app.router.add_static('/static/',path='static',name='static')
     app.router.add_static('/bitmap/',path='static/bitmap',name='bitmap')
+    app.router.add_static('/audio/',path='static/audio',name='audio')
     app.router.add_static('/fonts/',path='templates/fonts',name='fonts')
     # app.router.add_resource('/audio/',path='static/audio',name='audio')
     # app.router.add_static('/dream',path='static/audio/dream',name='audio')
