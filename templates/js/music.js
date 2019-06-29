@@ -85,6 +85,8 @@ musicfc.ontimeupdate = function () {
 
 function autoPlay() {
     playStatus = 1;
+    // !musicfc&&(musicfc = document.getElementsByTagName("audio")[0]);
+    // musicfc = document.getElementsByTagName("audio")[0];
     musicfc.play();
     $(".play").attr("class", 'fa fa-stop-circle play');
     $('#round_icon').addClass('play-tx2');
@@ -364,12 +366,12 @@ function hengshuping() {
 
 window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
 
-$(document).ready(function () {
-        // $('.fa-play-circle')[0].click();
-        // musicfc = document.getElementsByTagName("audio")[0];
-        // musicfc.play();
-        autoPlay()
-    });
+// $(document).ready(function () {
+//         // $('.fa-play-circle')[0].click();
+//         // musicfc = document.getElementsByTagName("audio")[0];
+//         // musicfc.play();
+//         autoPlay()
+//     });
 // $(function){$('i[class="fa fa fa-play-circle play"]').click()};
 
 // i[class="fa fa-play-circle play"]
