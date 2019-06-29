@@ -1,4 +1,4 @@
-﻿var playStatus = 1,
+﻿playStatus = 1,
     musicfc = document.getElementsByTagName("audio")[0],
     volume = 1,
     musicLoop = '',
@@ -364,6 +364,12 @@ function hengshuping() {
 
 window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
 
+$(document).ready(function () {
+        // $('.fa-play-circle')[0].click();
+        // musicfc = document.getElementsByTagName("audio")[0];
+        // musicfc.play();
+        autoPlay()
+    });
 // $(function){$('i[class="fa fa fa-play-circle play"]').click()};
 
 // i[class="fa fa-play-circle play"]
