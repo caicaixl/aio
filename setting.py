@@ -18,7 +18,7 @@ console = logging.StreamHandler()
 console.setFormatter(fmt)
 logger.addHandler(console)
 
-file_handler = TimedRotatingFileHandler(filename=f"./log/phone_deduplication", encoding="UTF-8", when="MIDNIGHT")
+file_handler = TimedRotatingFileHandler(filename=f"./log/aio", encoding="UTF-8", when="MIDNIGHT")
 file_handler.suffix = "%Y%m%d.log"
 file_handler.setFormatter(fmt)
 file_handler.setLevel(logging.DEBUG)
@@ -29,7 +29,7 @@ BASEPATH = os.path.dirname(__file__)
 TEMPLATESPATH = os.path.join(BASEPATH,'templates')
 TEMPLATES = Temp()
 
-ALLPHONENUMPATH = os.path.join(BASEPATH,'all_phone_num')
+ALLPHONENUMPATH = os.path.join(BASEPATH,'aio')
 
 
 

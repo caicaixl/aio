@@ -8,7 +8,7 @@ import aiohttp_jinja2
 import jinja2
 from aiohttp import web
 
-from control.control import Contorller
+from control.index import  Home
 from setting import  logger
 
 loop = asyncio.get_event_loop()
@@ -18,7 +18,7 @@ async def init():
     here = Path(__file__).resolve().parent
     aiohttp_jinja2.setup(app, loader=jinja2.FileSystemLoader(str(here)))
 
-    CONTORLLER = Contorller()
+    CONTORLLER = Home()
     # app.router.add_get("/csv/{name}", CONTORLLER.respCsv)
     # app.router.add_post("/home/phone", CONTORLLER.verifyjson)
     # app.router.add_post("/", CONTORLLER.login)

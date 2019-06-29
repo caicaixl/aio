@@ -5,10 +5,10 @@
 
 from aiohttp import web
 
-from setting import TEMPLATES, ALLPHONENUMPATH, logger
+from setting import TEMPLATES
 
 
-class Contorller:
+class Home:
     def __init__(self):
         pass
 
